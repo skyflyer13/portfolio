@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   @include background;
   background: $primary-color;
@@ -133,6 +134,51 @@ main {
 }
 
 // Contact Page
+
+#contact {
+  .text-fields {
+    display: grid;
+    grid-template-areas:
+      'name email'
+      'subject phone'
+      'message message';
+    grid-gap: 1.2rem;
+    margin-bottom: 3.2rem;
+    max-width: 1280px;
+    margin: auto;
+    overflow: hidden;
+
+    //Grid Areas
+    .name-input {
+      grid-area: name;
+    }
+    .subject-input {
+      grid-area: subject;
+    }
+    .email-input {
+      grid-area: email;
+    }
+    .phone-input {
+      grid-area: phone;
+    }
+    .message-input {
+      grid-area: message;
+      height: 100px;
+    }
+    .text-input {
+      padding: 0.5rem 1rem;
+    }
+  }
+
+  button[type='submit'] {
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+  }
+}
+
 .boxes {
   display: flex;
   flex-wrap: wrap;
@@ -157,6 +203,8 @@ main {
     }
   }
 }
+
+
 
 // Button Styles
 .btn {
