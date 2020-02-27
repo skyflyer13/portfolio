@@ -144,7 +144,8 @@ header {
 
 main {
   padding: 4rem;
-  min-height: calc(100vh - 60px); }
+  min-height: calc(100vh - 60px);
+  /* footer ostane na dnu */ }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -193,49 +194,18 @@ main {
       border-color: #eece1a;
       transition: all 0.5s ease-out; }
 
-#contact .text-fields {
-  display: grid;
-  grid-template-areas: 'name email' 'subject phone' 'message message';
-  grid-gap: 1.2rem;
-  margin-bottom: 3.2rem;
-  max-width: 1280px;
-  margin: auto;
-  overflow: hidden; }
-  #contact .text-fields .name-input {
-    grid-area: name; }
-  #contact .text-fields .subject-input {
-    grid-area: subject; }
-  #contact .text-fields .email-input {
-    grid-area: email; }
-  #contact .text-fields .phone-input {
-    grid-area: phone; }
-  #contact .text-fields .message-input {
-    grid-area: message;
-    height: 100px; }
-  #contact .text-fields .text-input {
-    padding: 0.5rem 1rem; }
-
-#contact button[type='submit'] {
-  width: 50%;
-  margin: auto;
-  overflow: hidden;
-  margin-top: 3rem;
-  margin-bottom: 5rem; }
-
 .boxes {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 1rem; }
   .boxes div {
-    font-size: 2rem;
     border: 3px #fff solid;
-    padding: 1.5rem 2.5rem;
-    margin-bottom: 3rem;
+    padding: 0.5rem 0.5rem;
+    background: #D0D0D0;
     transition: all 0.5s ease-out; }
     .boxes div:hover {
-      padding: 0.5rem 1.5rem;
+      padding: 1.5rem 1.5rem;
       background: #eece1a;
       color: #000; }
       .boxes div:hover span {
